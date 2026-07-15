@@ -1,7 +1,6 @@
-op=True
 tasks_list=[];
 
-while op:
+while True:
    
    if len(tasks_list)==0:
         print('LIST YOUR FIRST TASK:')
@@ -17,7 +16,7 @@ while op:
    print('IF YOU ARE FINISHED TYPE "YES" OTHERWISE TYPE "NO"')
    RES=input()
    if RES.upper()=='YES':
-       op=False
+       break
 
 # print('YOUR TASKS ARE:', ' , '.join(tasks_list)) -- another way without loop
 print('YOUR TASKS ARE:')
